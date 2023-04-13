@@ -1,0 +1,338 @@
+/* Начало reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Конец reset */
+
+
+/* font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
+}
+
+/* Ограничиваем контент */
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Используем для всех заголовков*/
+.title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  padding-bottom: 18px;
+  position: relative;
+  align-self: flex-start;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+  bottom: 0;
+  left: 0;
+}
+
+/* Начало header__top */
+
+.header__top-inner {
+  padding-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.menu__list-item+.menu__list-item {
+  margin-left: 32px;
+}
+
+.menu__list-link {
+  padding: 0 9px 9px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  color: #373A39;
+  text-transform: uppercase;
+  transition: all .5s;
+
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #FCBB08;
+}
+
+/* Конец header_top */
+
+/* Начало header__content */
+
+.header__content {
+  background-image: url(/images/Header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__title {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 88px;
+  color: #fff;
+  margin-bottom: 19px;
+  margin-top: auto;
+  padding-top: 180px;
+}
+
+.header_subtitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.74286px;
+  color: #FCBB08;
+  margin-bottom: 179px;
+  margin-bottom: auto;
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 94px);
+  justify-content: space-between;
+}
+
+.header__icon {
+  margin-bottom: 62px;
+}
+
+/* Конец header__content */
+
+/* Секция about */
+
+.about {
+  background-color: #E5E5E5;
+  padding: 152px 0 144px;
+}
+
+.about__content-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__title {
+  font-size: 48px;
+}
+
+.about__text p {
+  max-width: 770px;
+  margin-bottom: 16px;
+}
+
+/* Конец секции about */
+
+/* Начало секции expertise */
+
+.expertise {
+  padding: 140px 0 160px;
+  background: #FFFFFF;
+}
+
+.expertise__title {
+  margin-bottom: 90px;
+}
+
+.expertise__inner {
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.expertise__info {
+  width: 370px;
+  margin-top: 10px;
+  margin-right: 30px;
+  flex: none;
+}
+
+.expertise__info-item {
+  border-top: 2px solid #1D1D1D;
+  padding: 2px 0 28px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  position: relative;
+}
+
+.expertise__info-item span {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 7px;
+}
+
+.expertise__info-item span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #f0f0f0;
+  right: -7px;
+  top: -2px;
+  width: 100%;
+}
+
+.expertise__text p {
+  margin-bottom: 25px;
+}
+
+.expertise__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expertise__item {
+  width: 370px;
+  padding-left: 85px;
+  position: relative;
+}
+
+.expertise__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.expertise__item--design::before{
+  content: "";
+  background-image: url(/images/1_icon.svg)
+}
+
+.expertise__item--dev::before{
+  background-image: url(../images/2_icon.svg);
+}
+
+.expertise__item--marketing::before{
+  background-image: url(../images/3_icon.svg);
+}
+.expertise__item-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 4.29px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.expertise__item-text {
+  color: #F6F8FA;
+  margin-bottom: 188px;
+}
+/* Конец секции expertise */
+
+/* Начало секции magic */
+
+.magic{
+  background-color: #F6F8FA;
+  background-image: url(/images/magic_dog.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left 82%;
+}
+
+.magic__inner{
+  max-width: 400px;
+  margin-left: auto;
+  padding: 100px 0 190px;
+}
+
+.magic__title{
+  margin-bottom: 67px;
+}
+
+.magic__text p{
+  margin-bottom: 25px;
+}
+
+/* Конец секции magic */
