@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/style/style.css">
   <title>OMarketing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,26 +157,131 @@
         <h2 class="title magic__title">
           Let’s make magic.
         </h2>
-      
-      <div class="magic__text">
-        <p>Маркетинговое агентство MGN: полный комплекс маркетинговых, рекламных и дизайнерских услуг в Харькове и Украине: маркетинговые исследования рынков, товаров, потребителей, планирование комплекса маркетинга, реклама, проведение рекламных кампаний, брендинг, рекламный дизайн, pr.
-        </p>
 
-        <p>Нами накоплен немалый опыт работы в реальном бизнесе, в самых различных отраслях – от недвижимости до аптечного и медицинского бизнеса. Мы не просто беремся решать задачи наших клиентов, мы сами вышли из бизнес-среды и понимаем суть бизнес-процессов.</p>
+        <div class="magic__text">
+          <p>Маркетинговое агентство MGN: полный комплекс маркетинговых, рекламных и дизайнерских услуг в Харькове и
+            Украине: маркетинговые исследования рынков, товаров, потребителей, планирование комплекса маркетинга,
+            реклама, проведение рекламных кампаний, брендинг, рекламный дизайн, pr.
+          </p>
 
-        <p>Мы говорим с бизнесом на одном языке!</p>
+          <p>Нами накоплен немалый опыт работы в реальном бизнесе, в самых различных отраслях – от недвижимости до
+            аптечного и медицинского бизнеса. Мы не просто беремся решать задачи наших клиентов, мы сами вышли из
+            бизнес-среды и понимаем суть бизнес-процессов.</p>
+
+          <p>Мы говорим с бизнесом на одном языке!</p>
+        </div>
       </div>
     </div>
-  </div>
   </section>
 
   <section class="portfolio">
     <div class="container">
-      <div class="portfolio__inner">
-        
+      <div class="portfolio__top">
+        <h2 class="title">Portfolio</h2>
+
+        <div class="portfolio__filter-btn">
+          <button class="portfolio__btn" data-filter ="all">ALL</button>
+          <button class="portfolio__btn"data-filter = ".category-a" > BRANDING</button>
+          <button class="portfolio__btn" data-filter = ".category-b" >DESIGN</button>
+          <button class="portfolio__btn"data-filter = ".category-c" >PHOTOGRAPHY</button>
+          <button class="portfolio__btn" data-filter = ".category-d" >ILLUSTRATION</button>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__content"> 
+      <div class="portfolio__item mix category-a">
+        <img src="portfolio/1.jpg" alt="">
+        <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-a">
+        <img src="portfolio/2.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-b">
+        <img src="portfolio/4.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-b">
+        <img src="portfolio/4.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div> 
+      <div class="portfolio__item mix category-c">
+        <img src="portfolio/5.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div> 
+      <div class="portfolio__item mix category-c">
+        <img src="portfolio/6.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-d">
+        <img src="portfolio/7.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-d">
+        <img src="portfolio/8.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+      <div class="portfolio__item mix category-d">
+        <img src="portfolio/9.jpg" alt="">
+                <a href="" class="portfolio__item-link">
+          Раскрыть фото
+        </a>
+      </div>
+    </div>
+    <a href="#" class="portfolio_add">VIEW MORE PROJECTS</a>
+    <blockquote class="blockquote">
+      «Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+      <span class="blockquote__author">Крис Броган</span>
+    </blockquote>
+    <div class="portfolio__video">
+      <a data-fancybox class="portfolio__video-link" href="https://www.youtube.com/watch?v=Nj6aM9ljdQU">
+        <img src="/images/play.svg" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <div class="portfolio__numbers">
+        <h5 class="portfolio__numbers-item">
+          305
+          <span>Web Designs</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          220
+          <span>Logo Designs</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          52
+          <span>Print Designs</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          88
+          <span>Mobile Apps</span>
+        </h5>
       </div>
     </div>
   </section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="/js/mixitup.min.js"></script>
+  <script src="/js/jquery.fancybox.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
